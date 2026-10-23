@@ -1,0 +1,32 @@
+{
+  "format": 1,
+  "scope": "Three authored calculation tools with synthetic inputs plus new deterministic tests",
+  "files": [
+    {
+      "name": "mc_fire.py",
+      "bytes": 1977,
+      "sha256": "5d38e5ad3f8b48a7e64a436f26c834c866978d11a4adf136c1945e42023bd394"
+    },
+    {
+      "name": "mc_fire_10yr.py",
+      "bytes": 1990,
+      "sha256": "cb8428ca6c6f70bf3a9a4f536b9275aa298cd4a2ddcff2089795b8a312f0868d"
+    },
+    {
+      "name": "mc_fire_grid.py",
+      "bytes": 2446,
+      "sha256": "a9916ff49e40fdb7e8ab1f1199572a944dc85e30ab7f02e05f2d9f0dba27b30a"
+    },
+    {
+      "name": "test_simulations.py",
+      "bytes": 3086,
+      "sha256": "6e14cb65e1a11b1d0e1ae4cd6510cebcb311ac6244206b6ef77633ef535a9269"
+    }
+  ],
+  "changes": [
+    "Personal inputs/output replaced by dimensionless examples",
+    "CLI simulations and random seeding moved behind main guard",
+    "Terminalnonpositivebalance nowfails survival and clamps tozero;6REDsubcases nowGREEN"
+  ],
+  "verification": "4unittestmethods/15deterministicsubcases; import silence+random-state invariance checked. No fullsimulation/backtest/financial validation. Originalprivatevalues/hashes not exported."
+}
